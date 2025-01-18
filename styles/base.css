@@ -11,7 +11,7 @@ body, html {
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    overflow: hidden; 
+
 }
 
 header {
@@ -50,6 +50,7 @@ nav a:hover {
     grid-template-rows: auto; 
     gap: 1rem; 
     width: 100%;
+    max-width: 1200px;
     height: calc(100% - 6rem);
     padding: 1rem;
 }
@@ -61,7 +62,7 @@ nav a:hover {
     border-radius: 20px
 }
 
-h3 {
+h2 {
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -112,6 +113,7 @@ h3 {
     overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 20px;
+ 
 }
 
 .card-2 ul {
