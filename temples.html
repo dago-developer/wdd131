@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Gonzalez</title>
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <meta name="description" content="This is the official page for WDD 131 - Dynamic Web Fundamentals, a course focused on learning dynamic web development techniques and skills.">
+    <meta name="author" content="Daniel Gonzalez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button">☰</button>
+        <nav id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <section class="gallery">
+            <figure>
+                <img src="/images/adelaide_australia.webp" alt="Temple 1">
+                <figcaption>Adelaide - Australia</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/asuncion_paraguay.webp" alt="Temple 2">
+                <figcaption>Asuncion - Paraguay</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/baton_rouge.webp" alt="Temple 3">
+                <figcaption>Baton Rouge - Louisiana</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/brisbane_australia.webp" alt="Temple 4">
+                <figcaption>Brisbane - Australia</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/caracas_venezuela.webp" alt="Temple 5">
+                <figcaption>Caracas - Venezuela</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/gila_valley.webp" alt="Temple 6">
+                <figcaption>Gila valley - Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/tijuana_mexico.webp" alt="Temple 7">
+                <figcaption>Tijuana - Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/chicago_temple_lds.webp" alt="Temple 8">
+                <figcaption>Chicago - Illinois</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/cordoba_argentina.webp" alt="Temple 9">
+                <figcaption>Cordoba - Argentina</figcaption>
+            </figure>
+            <!-- Repite para 9 imágenes -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> | Daniel Gonzalez | Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
