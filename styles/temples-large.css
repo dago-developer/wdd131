@@ -1,12 +1,12 @@
 @media (min-width: 768px) {
-    /* Menú en fila */
+ 
     nav {
-        display: flex !important;  /* Asegúrate de que esté en display: flex */
-        position: static !important;  /* Evita que esté en absolute */
-        flex-direction: row !important;  /* En fila */
-        justify-content: center !important;  /* Centrado */
-        background: none !important;  /* Fondo transparente */
-        margin-top: 0 !important;  /* Elimina margen superior */
+        display: flex !important;  
+        position: static !important; 
+        flex-direction: row !important;  
+        justify-content: center !important;  
+        background: none !important;  
+        margin-top: 0 !important; 
     }
 
     nav a {
@@ -18,12 +18,12 @@
         display: none !important;  
     }
     .gallery {
-        grid-template-columns: repeat(2, 1fr) !important; /* Dos columnas en tabletas */
+        grid-template-columns: repeat(2, 1fr) !important; 
     }
 }
 @media (min-width: 1024px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr) !important; /* Tres columnas en pantallas grandes */
+        grid-template-columns: repeat(3, 1fr) !important; 
     }
 
     figure {
