@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Daniel Gonzalez</title>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <meta name="description" content="This is the official page for WDD 131 - Dynamic Web Fundamentals, a course focused on learning dynamic web development techniques and skills.">
+    <meta name="author" content="Daniel Gonzalez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <h6>VENEZUELA</h6>
+    </header>
+    <main>
+        <img src="images/venezuela.webp" 
+        srcset="images/venezuela-large.webp 1024w, images/venezuela.webp 600w"
+        sizes="(min-width: 1024px) 100vw, 100vw"
+        alt="Scenic view of Venezuela">
+        <section class="card-1">
+            <h4>Venezuela Information</h4>
+            <p>Area: 916,445 km²</p>
+            <p>Population: Approximately 30 million people</p>
+            <p>Capital: Caracas</p>
+            <p>Languages: Spanish (official)</p>
+            <p>Currency: Bolívar Soberano (VES)</p>
+            <p>Time Zone: UTC−4</p>
+            <p>Calling Code: +58</p>
+            <p>Internet TLD: .ve</p>
+        </section>
+        
+        <section class="card-2">
+            <h4>Weather in Caracas</h4>
+            <p>Temperature: 19°C</p>
+            <p>Wind Speed: 10 km/h</p>
+            <p>Conditions: Cloudy</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> | Daniel Gonzalez | Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

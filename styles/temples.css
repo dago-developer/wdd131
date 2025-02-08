@@ -93,8 +93,8 @@ figcaption {
 }
 
 
-footer {
-    background: #222;
+.footer {
+    background: #1b6fab;
     color: white;
     padding: 1rem;
     text-align: center;
