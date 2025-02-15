@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+ 
+    nav {
+        display: flex !important;  
+        position: static !important; 
+        flex-direction: row !important;  
+        justify-content: center !important;  
+        background: none !important;  
+        margin-top: 0 !important; 
+    }
+
+    nav a {
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+    #menu-button {
+        display: none !important;  
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr) !important; 
+    }
+}
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr) !important; 
+    }
+
+    figure {
+        padding: 15px;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+    }
+}
