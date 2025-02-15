@@ -107,6 +107,13 @@ document.addEventListener("DOMContentLoaded", () => {
           dedicated: "9 February 1972",
           area: 23045,
           imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/provo-utah-rock-canyon-temple/provo-utah-rock-canyon-temple-45659-main.jpg"
+        },
+        {
+          templeName: "Logan Utah Temple",
+          location: "Logan, Utah, Estados Unidos",
+          dedicated: " 17–19 May 1884",
+          area: 119619,
+          imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-40550-main.jpg"
         }
       ];
       
