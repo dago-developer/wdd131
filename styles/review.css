@@ -1,10 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header, footer {
@@ -20,6 +27,7 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Este hace que main ocupe el espacio disponible */
 }
 
 p {
@@ -35,8 +43,13 @@ p {
     font-size: 16px;
     border-radius: 5px;
     margin-top: 20px;
+    
 }
 
 .button:hover {
     background-color: #e69500;
+}
+
+footer {
+    margin-top: auto; /* Esto asegura que el footer esté siempre al fondo */
 }

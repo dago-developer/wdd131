@@ -9,7 +9,11 @@ const products = [
 
 document.addEventListener("DOMContentLoaded", function () {
     const productSelect = document.getElementById("product");
+    const reviewForm = document.querySelector("form");
 
+    reviewForm.addEventListener("submit", function () {
+        localStorage.setItem("reviewSubmitted", "true");
+    });
     products.forEach(product => {
         const option = document.createElement("option");
         option.value = product.id;
