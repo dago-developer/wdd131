@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <meta name="description" content="This is my final project wod WDD131">
+    <meta name="author" content="Daniel Gonzalez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="What to do in Cumaná"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://github.com/dago-developer/wdd231/blob/main/chamber/images/cumana.webp" />
+    <meta property="og:url" content="https://dago-developer.github.io/wdd231/chamber/"/>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/featured.js" defer></script>
+    <script src="scripts/hamburgerbtn.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="div-logo">
+                <img class="logo" src="images/logocumana.png" alt="logo" loading="lazy">
+                <h1>What to do in Cumaná</h1>
+            </div>
+            
+            <!-- Icono de hamburguesa para pantallas pequeñas -->
+            <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <nav class="nav" id="nav">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="about.html">About</a>
+                <a href="join.html">Join</a>
+            
+                <div class="lenguage" id="lenguage">
+                    <button id="es-btn"><img src="images/spain.webp" alt="Spanish" loading="lazy"></button>
+                    <button id="en-btn"><img src="images/usa.webp" alt="English" loading="lazy"></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="join-section">
+            <h2>Stay Updated with New Places in Cumaná!</h2>
+            <p>Subscribe to our newsletter and be the first to know about new attractions, events, and recommendations.</p>
+
+            <!-- Formulario de registro -->
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="text" id="name" placeholder="First Name" required>
+                <input type="text" id="lastname" placeholder="Last Name" required>
+                <input type="number" id="age" placeholder="Age" min="1" max="120" required>
+                
+                <!-- Campo de selección de sexo -->
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+
+                <textarea id="interests" placeholder="Tell us your interests (e.g., beaches, history, food)" rows="4" required></textarea>
+
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div id="confirmation-message" class="confirmation-message" style="display: none;">
+                <p>Thank you for subscribing! Stay tuned for updates in your inbox.</p>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="email-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <p>You are already registered with this email. Please use another one.</p>
+        </div>
+</div>
+    </main> 
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> | Created with ❤ by Daniel Gonzalez - WDD231 | Venezuela</p>
+            <p id="lastModified"></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
